@@ -96,7 +96,7 @@
                     <a class="thumbnail" href="sidebar-right.html">
 						<span class="img">
 							<img src="{{ STATIC_URL }}img/s1.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
+							<span class="cover"><span class="more">{% trans "See details" %} &rarr;</span></span>
 						</span>
                         <span class="title">Sample title - big data solutions</span>
                     </a>
@@ -110,7 +110,7 @@
                     <a class="thumbnail" href="sidebar-right.html">
 						<span class="img">
 							<img src="{{ STATIC_URL }}img/s1.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
+							<span class="cover"><span class="more">{% trans "See details" %} &rarr;</span></span>
 						</span>
                         <span class="title">Pure ipsum - development services for people</span>
                     </a>
@@ -124,7 +124,7 @@
                     <a class="thumbnail" href="sidebar-right.html">
 						<span class="img">
 							<img src="{{ STATIC_URL }}img/s1.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
+							<span class="cover"><span class="more">{% trans "See details" %} &rarr;</span></span>
 						</span>
                         <span class="title">Lorem studios - interior and patio design</span>
                     </a>
@@ -138,7 +138,7 @@
                     <a class="thumbnail" href="sidebar-right.html">
 						<span class="img">
 							<img src="{{ STATIC_URL }}img/s1.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
+							<span class="cover"><span class="more">{% trans "See details" %} &rarr;</span></span>
 						</span>
                         <span class="title">Pure ipsum - development services for people</span>
                     </a>
@@ -152,7 +152,7 @@
                     <a class="thumbnail" href="sidebar-right.html">
 						<span class="img">
 							<img src="{{ STATIC_URL }}img/s1.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
+							<span class="cover"><span class="more">{% trans "See details" %} &rarr;</span></span>
 						</span>
                         <span class="title">Lorem studios - interior and patio design</span>
                     </a>
@@ -166,7 +166,7 @@
                     <a class="thumbnail" href="sidebar-right.html">
 						<span class="img">
 							<img src="{{ STATIC_URL }}img/s1.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
+							<span class="cover"><span class="more">{% trans "See details" %} &rarr;</span></span>
 						</span>
                         <span class="title">Lorem studios - interior and patio design</span>
                     </a>
@@ -177,6 +177,20 @@
                 </div>
             </div>
 
+        </div>
+        <!-- /section -->
+
+        <div class="row section topspace">
+            <div class="panel panel-cta">
+                <div class="panel-body">
+                    <div class="col-lg-8">
+                        <p>{% placeholder "message" %}</p>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalAskQuestion">{% trans "Write a message" %}</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- /section -->
 
@@ -224,32 +238,17 @@
         </div>
         <!-- / section -->
 
-        <div class="row section topspace">
-            <div class="panel panel-cta">
-                <div class="panel-body">
-                    <div class="col-lg-8">
-                        <p>A simple, nice-looking <b>call to action box</b>. Boxing is about respect. getting it for
-                            yourself,
-                            and taking it away from the other guy. no, this is mount everest. </p>
-                    </div>
-                    <div class="col-lg-4 text-right">
-                        <a href="http://www.gettemplate.com/downloads/initio.zip " class="btn btn-primary btn-lg">Download
-                            template</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /section -->
 
-        <div class="row section clients topspace">
-            <h2 class="section-title"><span>{% trans "Clients" %}</span></h2>
 
-            <div class="col-lg-12">
-                <p>
-                    <img src="{{ STATIC_URL }}img/sample_clients.png" alt="">
-                </p>
-            </div>
-        </div>
+{#        <div class="row section clients topspace">#}
+{#            <h2 class="section-title"><span>{% trans "Clients" %}</span></h2>#}
+{##}
+{#            <div class="col-lg-12">#}
+{#                <p>#}
+{#                    <img src="{{ STATIC_URL }}img/sample_clients.png" alt="">#}
+{#                </p>#}
+{#            </div>#}
+{#        </div>#}
         <!-- /section -->
 
     </div>
