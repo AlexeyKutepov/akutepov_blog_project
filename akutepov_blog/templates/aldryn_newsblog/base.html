@@ -1,5 +1,5 @@
 {% extends CMS_TEMPLATE %}
-
+{% load i18n cms_tags apphooks_config_tags %}
 {% block content %}
 
     <main id="main">
@@ -17,6 +17,8 @@
 
 			<!-- Sidebar -->
 			<aside class="col-md-4 sidebar sidebar-left">
+
+                {% static_placeholder "widget" %}
 
 				<div class="widget">
 					<h4>Lorem ipsum dolor sit</h4>
