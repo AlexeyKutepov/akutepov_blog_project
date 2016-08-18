@@ -155,7 +155,19 @@ INSTALLED_APPS = [
     'djangocms_inherit',
     'djangocms_link',
     'reversion',
-    'akutepov_blog'
+    'akutepov_blog',
+
+    'aldryn_apphooks_config',
+    'aldryn_categories',
+    'aldryn_common',
+    'aldryn_newsblog',
+    'aldryn_people',
+    'aldryn_reversion',
+    'aldryn_translation_tools',
+    'parler',
+    'sortedm2m',
+    'taggit',
+    'aldryn_boilerplates',
 ]
 
 LANGUAGES = (
@@ -193,6 +205,7 @@ CMS_TEMPLATES = (
     ## Customize this
     ('index.html', 'Index'),
     ('about.html', 'About'),
+    ('blog.html', 'Blog'),
     ('page.html', 'Page'),
     ('feature.html', 'Page with Feature')
 )
@@ -223,3 +236,5 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+ALDRYN_BOILERPLATE_NAME = 'bootstrap3'
