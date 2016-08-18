@@ -1,10 +1,5 @@
 {% extends "base.html" %}
 {% load cms_tags staticfiles sekizai_tags menu_tags i18n %}
 {% block content %}
-<main id="main">
-	<div class="container">
-        {% placeholder "content" %}
-	</div>	<!-- /container -->
-</main>
-
+{% placeholder "content" %}
 {% endblock %}
