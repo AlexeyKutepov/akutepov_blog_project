@@ -283,6 +283,10 @@ a:hover {
 img {
   max-width: 100%;
 }
+.inp{
+  height: 41px;
+  padding: 12px 35px;
+}
 .btn {
   font-size: 12px;
   font-size: 0.75rem;
