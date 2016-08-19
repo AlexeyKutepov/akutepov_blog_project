@@ -5,13 +5,14 @@
     {# submission of this form will forward to "includes/search_results.html" #}
     {# this form can also be submitted using ajax and "includes/search_results.html" is returned #}
     <form action="{{ query_url }}" method="get">
-            <div class="input-group">
-                <input type="text" class="form-control inp" name="q" id="search-plugin-{{ instance.pk }}" placeholder="{% trans 'Search for...' %}">
-                <input type="hidden" class="form-control inp" name="max_articles" value="{{ instance.max_articles }}">
+        <div class="input-group">
+            <input type="text" class="form-control inp" name="q" id="search-plugin-{{ instance.pk }}"
+                   placeholder="{% trans 'Search for...' %}">
+            <input type="hidden" class="form-control inp" name="max_articles" value="{{ instance.max_articles }}">
                   <span class="input-group-btn">
-                    <button class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
                   </span>
-            </div>
-            <!-- /input-group -->
+        </div>
     </form>
 </div>
