@@ -168,6 +168,9 @@ INSTALLED_APPS = [
     'sortedm2m',
     'taggit',
     'aldryn_boilerplates',
+
+    #plugins
+    'portfolio',
 ]
 
 LANGUAGES = (
