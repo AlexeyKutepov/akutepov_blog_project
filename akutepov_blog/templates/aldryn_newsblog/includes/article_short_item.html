@@ -1,0 +1,25 @@
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+<article class="col-sm-6 col-md-3 article post
+    {% if article.is_featured %} featured{% endif %}
+    {% if not article.published %} unpublished{% endif %}">
+
+    <header class="entry-header">
+
+ 		<h3 class="entry-title text-center">
+            {% if not detail_view %}
+                <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
+            {% else %}
+                {% render_model article "title" %}
+            {% endif %}
+        </h3>
+	</header>
+
+    {% render_model article "lead_in" %}
+
+    {% if detail_view %}
+        {% render_placeholder article.content language placeholder_language %}
+    {% endif %}
+
+    <p class="text-center"><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}" class="btn btn-action">{% trans "Read more" %}</a></p>
+</article>
