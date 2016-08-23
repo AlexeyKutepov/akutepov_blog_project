@@ -1,0 +1,8 @@
+{% load i18n %}
+<div class="col-sm-6 col-md-3">
+    <h3 class="text-center">{{ instance.title }}</h3>
+
+    <p>{{ instance.details }}</p>
+
+    <p class="text-center"><a href="{{ instance.link }}" class="btn btn-action">{% trans "Read more" %}</a></p>
+</div>

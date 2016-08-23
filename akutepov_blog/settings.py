@@ -171,6 +171,7 @@ INSTALLED_APPS = [
 
     #plugins
     'portfolio',
+    'service'
 ]
 
 LANGUAGES = (

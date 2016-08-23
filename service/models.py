@@ -2,13 +2,10 @@ from cms.models.pluginmodel import CMSPlugin
 
 from django.db import models
 
-from filer.fields.image import FilerImageField
 
-
-class PortfolioItem(CMSPlugin):
-    image = FilerImageField()
+class ServiceItem(CMSPlugin):
     title = models.CharField(max_length=100)
-    details = models.CharField(max_length=100)
+    details = models.TextField()
     link = models.CharField(max_length=300)
 
     def __str__(self):
