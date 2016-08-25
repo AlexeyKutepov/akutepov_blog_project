@@ -168,6 +168,7 @@ INSTALLED_APPS = [
     'sortedm2m',
     'taggit',
     'aldryn_boilerplates',
+    "aldryn_disqus",
 
     #plugins
     'portfolio',
@@ -242,3 +243,5 @@ THUMBNAIL_PROCESSORS = (
 )
 
 ALDRYN_BOILERPLATE_NAME = 'bootstrap3'
+
+DISQUS_SHORTNAME='akutepov'
