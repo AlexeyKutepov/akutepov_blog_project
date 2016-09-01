@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-15 12:36+0300\n"
+"POT-Creation-Date: 2016-09-01 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,35 +17,146 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: akutepov_blog/settings.py:158 akutepov_blog/settings.py:169
+#: akutepov_blog/settings.py:180 akutepov_blog/settings.py:191
 msgid "ru"
 msgstr ""
 
-#: akutepov_blog/settings.py:159 akutepov_blog/settings.py:176
+#: akutepov_blog/settings.py:181 akutepov_blog/settings.py:198
 msgid "en"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:44
-msgid "Menu"
+#: akutepov_blog/templates/aldryn_newsblog/article_detail.html:15
+msgid "Previous Article"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:72
-msgid "Services"
+#: akutepov_blog/templates/aldryn_newsblog/article_detail.html:17
+msgid "Back to Overview"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:82 akutepov_blog/templates/base.html:91
-#: akutepov_blog/templates/base.html:100 akutepov_blog/templates/base.html:109
+#: akutepov_blog/templates/aldryn_newsblog/article_detail.html:19
+msgid "Next Article"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/article_list.html:8
+#: akutepov_blog/templates/aldryn_newsblog/plugins/archive.html:22
+#: akutepov_blog/templates/aldryn_newsblog/plugins/authors.html:9
+#: akutepov_blog/templates/aldryn_newsblog/plugins/featured_articles.html:6
+#: akutepov_blog/templates/aldryn_newsblog/plugins/latest_articles.html:7
+#: akutepov_blog/templates/aldryn_newsblog/plugins/related_articles.html:11
+msgid "No items available"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/includes/article_short_item.html:24
+#: service/templates/service_item.html:7
 msgid "Read more"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:117
+#: akutepov_blog/templates/aldryn_newsblog/includes/pagination.html:8
+msgid "Previous"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/includes/pagination.html:42
+msgid "Next"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/includes/search_results.html:6
+#, python-format
+msgid "Most recent articles containing \"<strong>%(query)s</strong>\""
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/includes/search_results.html:21
+msgid "No articles found"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/includes/search_results.html:23
+msgid "Enter a query above"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/plugins/article_search.html:4
+msgid "Search"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/plugins/article_search.html:10
+msgid "Search for..."
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/plugins/categories.html:6
+#: akutepov_blog/templates/aldryn_newsblog/plugins/tags.html:10
+msgid "All"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/plugins/related_articles.html:8
+msgid "by"
+msgstr ""
+
+#: akutepov_blog/templates/aldryn_newsblog/plugins/tags.html:4
+msgid "Tags"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:37
+msgid "Мessage"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:43
+msgid "Email address"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:46 akutepov_blog/templates/index.html:70
+msgid "Write a message"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:54
+msgid "Send"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:73 akutepov_blog/templates/index.html:17
+msgid "Menu"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:95
+msgid "Contact"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:106
+msgid "Follow me"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:119
+msgid "Info"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:127 akutepov_blog/templates/base.html:130
+msgid "Ask question"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:145
+msgid "Blog of Alexey Kutepov"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:152
+msgid "Alexey Kutepov"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:44
+msgid "Services"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:54
 msgid "Recent Works"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:227
-msgid "Clients"
+#: akutepov_blog/templates/index.html:78
+msgid "Articles"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:246
-msgid "Contact"
+#: portfolio/cms_plugins.py:9
+msgid "Portfolio Plugin"
+msgstr ""
+
+#: portfolio/templates/portfolio_item.html:6
+msgid "See details"
+msgstr ""
+
+#: service/cms_plugins.py:9
+msgid "Service Plugin"
 msgstr ""
