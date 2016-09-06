@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^robots\.txt$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap',
         {'sitemaps': {'cmspages': CMSSitemap}}),
+    url(r'^subscribe/', include('subscribe.urls')),
     url(r'^select2/', include('django_select2.urls')),
 ]
 

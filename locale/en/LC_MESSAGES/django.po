@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 12:24+0300\n"
+"POT-Creation-Date: 2016-09-06 12:53+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: akutepov_blog/settings.py:180 akutepov_blog/settings.py:191
+#: akutepov_blog/settings.py:183 akutepov_blog/settings.py:194
 msgid "ru"
 msgstr ""
 
-#: akutepov_blog/settings.py:181 akutepov_blog/settings.py:198
+#: akutepov_blog/settings.py:184 akutepov_blog/settings.py:201
 msgid "en"
 msgstr ""
 
@@ -109,15 +109,23 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:96 akutepov_blog/templates/base.html:102
+#: akutepov_blog/templates/base.html:96 akutepov_blog/templates/base.html:106
 msgid "Subscribe"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:117
+#: akutepov_blog/templates/base.html:103
+msgid "You have successfully subscribed to the newsletter!"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:104
+msgid "Error!"
+msgstr ""
+
+#: akutepov_blog/templates/base.html:122
 msgid "Blog of Alexey Kutepov"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:124
+#: akutepov_blog/templates/base.html:129
 msgid "Alexey Kutepov"
 msgstr ""
 

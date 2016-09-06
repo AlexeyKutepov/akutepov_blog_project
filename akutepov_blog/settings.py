@@ -170,6 +170,9 @@ INSTALLED_APPS = [
     'aldryn_boilerplates',
     "aldryn_disqus",
 
+    #apps
+    'subscribe',
+
     #plugins
     'portfolio',
     'service'

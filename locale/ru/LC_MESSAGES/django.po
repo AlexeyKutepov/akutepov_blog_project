@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 12:24+0300\n"
+"POT-Creation-Date: 2016-09-06 12:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: akutepov_blog/settings.py:180 akutepov_blog/settings.py:191
+#: akutepov_blog/settings.py:183 akutepov_blog/settings.py:194
 msgid "ru"
 msgstr ""
 
-#: akutepov_blog/settings.py:181 akutepov_blog/settings.py:198
+#: akutepov_blog/settings.py:184 akutepov_blog/settings.py:201
 msgid "en"
 msgstr ""
 
@@ -111,15 +111,23 @@ msgstr "Я в соцсетях"
 msgid "Info"
 msgstr "Информация"
 
-#: akutepov_blog/templates/base.html:96 akutepov_blog/templates/base.html:102
+#: akutepov_blog/templates/base.html:96 akutepov_blog/templates/base.html:106
 msgid "Subscribe"
 msgstr "Подписаться"
 
-#: akutepov_blog/templates/base.html:117
+#: akutepov_blog/templates/base.html:103
+msgid "You have successfully subscribed to the newsletter!"
+msgstr "Вы успешно подписаны на наши новости!"
+
+#: akutepov_blog/templates/base.html:104
+msgid "Error!"
+msgstr "Ошибка"
+
+#: akutepov_blog/templates/base.html:122
 msgid "Blog of Alexey Kutepov"
 msgstr "Блог Алексея Кутепова"
 
-#: akutepov_blog/templates/base.html:124
+#: akutepov_blog/templates/base.html:129
 msgid "Alexey Kutepov"
 msgstr "Алексей Кутепов"
 
