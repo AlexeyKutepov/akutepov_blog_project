@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-01 10:17+0300\n"
+"POT-Creation-Date: 2016-09-06 12:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,47 +95,31 @@ msgstr ""
 msgid "Tags"
 msgstr "Метки"
 
-#: akutepov_blog/templates/base.html:37
-msgid "Мessage"
-msgstr "Сообщение"
-
-#: akutepov_blog/templates/base.html:43
-msgid "Email address"
-msgstr "Email"
-
-#: akutepov_blog/templates/base.html:46 akutepov_blog/templates/index.html:70
-msgid "Write a message"
-msgstr "Напишите сообщение"
-
-#: akutepov_blog/templates/base.html:54
-msgid "Send"
-msgstr "Отправить"
-
-#: akutepov_blog/templates/base.html:73 akutepov_blog/templates/index.html:17
+#: akutepov_blog/templates/base.html:42 akutepov_blog/templates/index.html:17
 msgid "Menu"
 msgstr "Меню"
 
-#: akutepov_blog/templates/base.html:95
+#: akutepov_blog/templates/base.html:64
 msgid "Contact"
 msgstr "Контакты"
 
-#: akutepov_blog/templates/base.html:106
+#: akutepov_blog/templates/base.html:75
 msgid "Follow me"
 msgstr "Я в соцсетях"
 
-#: akutepov_blog/templates/base.html:119
+#: akutepov_blog/templates/base.html:88
 msgid "Info"
 msgstr "Информация"
 
-#: akutepov_blog/templates/base.html:127 akutepov_blog/templates/base.html:130
-msgid "Ask question"
-msgstr "Задать вопрос"
+#: akutepov_blog/templates/base.html:96 akutepov_blog/templates/base.html:102
+msgid "Subscribe"
+msgstr "Подписаться"
 
-#: akutepov_blog/templates/base.html:145
+#: akutepov_blog/templates/base.html:117
 msgid "Blog of Alexey Kutepov"
 msgstr "Блог Алексея Кутепова"
 
-#: akutepov_blog/templates/base.html:152
+#: akutepov_blog/templates/base.html:124
 msgid "Alexey Kutepov"
 msgstr "Алексей Кутепов"
 
@@ -147,7 +131,24 @@ msgstr "Услуги"
 msgid "Recent Works"
 msgstr "Последние работы"
 
-#: akutepov_blog/templates/index.html:78
+#: akutepov_blog/templates/index.html:71
+msgid "Мessage"
+msgstr "Сообщение"
+
+#: akutepov_blog/templates/index.html:77
+msgid "Email address"
+msgstr "Email"
+
+#: akutepov_blog/templates/index.html:80
+#: akutepov_blog/templates/index.html:101
+msgid "Write a message"
+msgstr "Напишите сообщение"
+
+#: akutepov_blog/templates/index.html:88
+msgid "Send"
+msgstr "Отправить"
+
+#: akutepov_blog/templates/index.html:109
 msgid "Articles"
 msgstr "Статьи"
 
@@ -164,6 +165,9 @@ msgstr "Подробнее"
 #| msgid "Services"
 msgid "Service Plugin"
 msgstr "Услуги"
+
+#~ msgid "Ask question"
+#~ msgstr "Задать вопрос"
 
 #~ msgid "Clients"
 #~ msgstr "Клиенты"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-01 10:16+0300\n"
+"POT-Creation-Date: 2016-09-06 12:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,47 +93,31 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:37
-msgid "Мessage"
-msgstr ""
-
-#: akutepov_blog/templates/base.html:43
-msgid "Email address"
-msgstr ""
-
-#: akutepov_blog/templates/base.html:46 akutepov_blog/templates/index.html:70
-msgid "Write a message"
-msgstr ""
-
-#: akutepov_blog/templates/base.html:54
-msgid "Send"
-msgstr ""
-
-#: akutepov_blog/templates/base.html:73 akutepov_blog/templates/index.html:17
+#: akutepov_blog/templates/base.html:42 akutepov_blog/templates/index.html:17
 msgid "Menu"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:95
+#: akutepov_blog/templates/base.html:64
 msgid "Contact"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:106
+#: akutepov_blog/templates/base.html:75
 msgid "Follow me"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:119
+#: akutepov_blog/templates/base.html:88
 msgid "Info"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:127 akutepov_blog/templates/base.html:130
-msgid "Ask question"
+#: akutepov_blog/templates/base.html:96 akutepov_blog/templates/base.html:102
+msgid "Subscribe"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:145
+#: akutepov_blog/templates/base.html:117
 msgid "Blog of Alexey Kutepov"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:152
+#: akutepov_blog/templates/base.html:124
 msgid "Alexey Kutepov"
 msgstr ""
 
@@ -145,7 +129,24 @@ msgstr ""
 msgid "Recent Works"
 msgstr ""
 
-#: akutepov_blog/templates/index.html:78
+#: akutepov_blog/templates/index.html:71
+msgid "Мessage"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:77
+msgid "Email address"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:80
+#: akutepov_blog/templates/index.html:101
+msgid "Write a message"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:88
+msgid "Send"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:109
 msgid "Articles"
 msgstr ""
 

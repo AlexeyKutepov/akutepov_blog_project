@@ -26,37 +26,6 @@
 <body class="home">
 {% cms_toolbar %}
 
-<!-- Modal -->
-<div id="modalAskQuestion" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{% trans "Мessage" %}</h4>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="form-group">
-                    <label>{% trans "Email address" %} <i class="text-danger">*</i></label>
-                    <input class="form-control" name="email" type="email"
-                           placeholder="mail@example.com">
-                    <p><label>{% trans "Write a message" %}</label>
-                    <textarea rows="5" style="width:100%;" class="form-control"
-                              name="question"></textarea>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-action" data-dismiss="modal">{% trans "Send" %}</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 {% block header %}
 <header id="header">
     <div id="head" class="parallax" parallax-speed="1">
@@ -124,10 +93,13 @@
             </div>
 
             <div class="col-md-3 widget">
-                <h3 class="widget-title">{% trans "Ask question" %}</h3>
+                <h3 class="widget-title">{% trans "Subscribe" %}</h3>
 
                 <div class="widget-body">
-                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalAskQuestion">{% trans "Ask question" %}</a>
+                    <div class="form-group">
+                        <input class="form-control" name="email" type="email" placeholder="mail@example.com">
+                    </div>
+                    <button type="button" class="btn btn-primary" >{% trans "Subscribe" %}</button>
                 </div>
             </div>
 
