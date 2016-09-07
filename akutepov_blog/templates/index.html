@@ -7,7 +7,8 @@
                 <img class="img-circle" src="{{ STATIC_URL }}img/me.jpg" alt="">
                 <span class="title">Алексей Кутепов</span>
                 <span class="tagline">Разработчик программного обеспечения<br>
-                    <a href="{% page_language_url "ru" %}">Русский</a> | <a href="{% page_language_url "en" %}">English</a></span>
+                    <a href="{% page_language_url "ru" %}">Русский</a> | <a
+                            href="{% page_language_url "en" %}">English</a></span>
             </h1>
         </div>
 
@@ -29,105 +30,134 @@
     </header>
 {% endblock %}
 {% block content %}
-<main id="main">
+    <main id="main">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="row section topspace">
-            <div class="col-md-12">
-                <p class="lead text-center text-muted">{% placeholder "citation" %}</p>
+            <div class="row section topspace">
+                <div class="col-md-12">
+                    <p class="lead text-center text-muted">{% placeholder "citation" %}</p>
+                </div>
             </div>
-        </div>
-        <!-- / section -->
+            <!-- / section -->
 
-        <div class="row section featured topspace">
-            <h2 class="section-title"><span>{% trans "Services" %}</span></h2>
+            <div class="row section featured topspace">
+                <h2 class="section-title"><span>{% trans "Services" %}</span></h2>
 
-            <div class="row">
-                {% placeholder "services" %}
-            </div>
-        </div>
-        <!-- / section -->
-
-        <div class="row section recentworks topspace">
-
-            <h2 class="section-title"><span>{% trans "Recent Works" %}</span></h2>
-
-            <div class="thumbnails recentworks row">
-                {% placeholder "portfolio" %}
-            </div>
-
-        </div>
-        <!-- /section -->
-
-        <!-- Modal -->
-        <div id="modalFeedback" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">{% trans "Мessage" %}</h4>
-              </div>
-              <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <label>{% trans "Email address" %} <i class="text-danger">*</i></label>
-                            <input class="form-control" name="email" type="email"
-                                   placeholder="mail@example.com">
-                            <p><label>{% trans "Write a message" %}</label>
-                            <textarea rows="5" style="width:100%;" class="form-control"
-                                      name="question"></textarea>
+                    {% placeholder "services" %}
+                </div>
+            </div>
+            <!-- / section -->
+
+            <div class="row section recentworks topspace">
+
+                <h2 class="section-title"><span>{% trans "Recent Works" %}</span></h2>
+
+                <div class="thumbnails recentworks row">
+                    {% placeholder "portfolio" %}
+                </div>
+
+            </div>
+            <!-- /section -->
+
+            <div id="modalAlert" class="modal fade bs-example-modal-lg modal-center" tabindex="-1" role="dialog"
+                 aria-labelledby="modalAlert">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">{% trans "Thank you!" %}</h4>
+                        </div>
+                        <div class="modal-body center-block">
+                            <h5 id="alertText">{% trans "Your message has been successfully sent!" %}</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" name="send" data-dismiss="modal" class="btn btn-action">OK
+                            </button>
                         </div>
                     </div>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-action" data-dismiss="modal">{% trans "Send" %}</button>
-              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="row section topspace">
-            <div class="panel panel-cta">
-                <div class="panel-body">
-                    <div class="col-lg-8">
-                        <p>{% placeholder "message" %}</p>
+            <form id="formFeedback" action="{% url "feedback" %}" method="post">
+                {% csrf_token %}
+                <!-- Modal -->
+                <div id="modalFeedback" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">{% trans "Мessage" %}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label>{% trans "Email address" %} <i class="text-danger">*</i></label>
+                                            <input class="form-control" name="email" type="email"
+                                                   placeholder="mail@example.com">
+
+                                            <p><label>{% trans "Write a message" %}</label>
+                                                <textarea rows="5" style="width:100%;" class="form-control"
+                                                          name="message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" name="send" class="btn btn-action">{% trans "Send" %}</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 text-right">
-                        <a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalFeedback">{% trans "Write a message" %}</a>
+                </div>
+            </form>
+
+            <div class="row section topspace">
+                <div class="panel panel-cta">
+                    <div class="panel-body">
+                        <div class="col-lg-8">
+                            <p>{% placeholder "message" %}</p>
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <a href="" class="btn btn-primary btn-lg" data-toggle="modal"
+                               data-target="#modalFeedback">{% trans "Write a message" %}</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /section -->
+            <!-- /section -->
 
-        <div class="row section featured topspace">
-            <h2 class="section-title"><span>{% trans "Articles" %}</span></h2>
+            <div class="row section featured topspace">
+                <h2 class="section-title"><span>{% trans "Articles" %}</span></h2>
 
-            <div class="row">
-                {% placeholder "latest_articles" %}
+                <div class="row">
+                    {% placeholder "latest_articles" %}
+                </div>
             </div>
+            <!-- / section -->
+
+
+            {#        <div class="row section clients topspace">#}
+            {#            <h2 class="section-title"><span>{% trans "Clients" %}</span></h2>#}
+            {##}
+            {#            <div class="col-lg-12">#}
+            {#                <p>#}
+            {#                    <img src="{{ STATIC_URL }}img/sample_clients.png" alt="">#}
+            {#                </p>#}
+            {#            </div>#}
+            {#        </div>#}
+            <!-- /section -->
+
         </div>
-        <!-- / section -->
-
-
-
-{#        <div class="row section clients topspace">#}
-{#            <h2 class="section-title"><span>{% trans "Clients" %}</span></h2>#}
-{##}
-{#            <div class="col-lg-12">#}
-{#                <p>#}
-{#                    <img src="{{ STATIC_URL }}img/sample_clients.png" alt="">#}
-{#                </p>#}
-{#            </div>#}
-{#        </div>#}
-        <!-- /section -->
-
-    </div>
-    <!-- /container -->
-</main>
+        <!-- /container -->
+    </main>
+{% endblock %}
+{% block js %}
+    {% addtoblock "js" %}
+        <script src="{{ STATIC_URL }}js/feedback.js"></script>
+    {% endaddtoblock %}
 {% endblock %}

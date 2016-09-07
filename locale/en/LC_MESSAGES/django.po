@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 12:53+0300\n"
+"POT-Creation-Date: 2016-09-07 10:50+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: akutepov_blog/settings.py:183 akutepov_blog/settings.py:194
+#: akutepov_blog/settings.py:184 akutepov_blog/settings.py:195
 msgid "ru"
 msgstr ""
 
-#: akutepov_blog/settings.py:184 akutepov_blog/settings.py:201
+#: akutepov_blog/settings.py:185 akutepov_blog/settings.py:202
 msgid "en"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: akutepov_blog/templates/base.html:42 akutepov_blog/templates/index.html:17
+#: akutepov_blog/templates/base.html:42 akutepov_blog/templates/index.html:18
 msgid "Menu"
 msgstr ""
 
@@ -129,32 +129,40 @@ msgstr ""
 msgid "Alexey Kutepov"
 msgstr ""
 
-#: akutepov_blog/templates/index.html:44
+#: akutepov_blog/templates/index.html:45
 msgid "Services"
 msgstr ""
 
-#: akutepov_blog/templates/index.html:54
+#: akutepov_blog/templates/index.html:55
 msgid "Recent Works"
 msgstr ""
 
 #: akutepov_blog/templates/index.html:71
+msgid "Thank you!"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:74
+msgid "Your message has been successfully sent!"
+msgstr ""
+
+#: akutepov_blog/templates/index.html:94
 msgid "Мessage"
 msgstr ""
 
-#: akutepov_blog/templates/index.html:77
+#: akutepov_blog/templates/index.html:100
 msgid "Email address"
 msgstr ""
 
-#: akutepov_blog/templates/index.html:80
-#: akutepov_blog/templates/index.html:101
+#: akutepov_blog/templates/index.html:104
+#: akutepov_blog/templates/index.html:127
 msgid "Write a message"
 msgstr ""
 
-#: akutepov_blog/templates/index.html:88
+#: akutepov_blog/templates/index.html:112
 msgid "Send"
 msgstr ""
 
-#: akutepov_blog/templates/index.html:109
+#: akutepov_blog/templates/index.html:135
 msgid "Articles"
 msgstr ""
 

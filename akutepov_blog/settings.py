@@ -172,6 +172,7 @@ INSTALLED_APPS = [
 
     #apps
     'subscribe',
+    'feedback',
 
     #plugins
     'portfolio',
