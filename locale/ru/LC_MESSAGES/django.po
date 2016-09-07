@@ -163,7 +163,7 @@ msgstr "Email"
 #: akutepov_blog/templates/index.html:104
 #: akutepov_blog/templates/index.html:127
 msgid "Write a message"
-msgstr "Напишите сообщение"
+msgstr "Написать сообщение"
 
 #: akutepov_blog/templates/index.html:112
 msgid "Send"

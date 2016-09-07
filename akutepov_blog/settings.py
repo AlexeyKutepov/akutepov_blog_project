@@ -215,6 +215,7 @@ CMS_TEMPLATES = (
     ('index.html', 'Index'),
     ('about.html', 'About'),
     ('blog.html', 'Blog'),
+    ('contacts.html', 'Contacts'),
     ('single.html', 'Single page'),
     ('page.html', 'Page'),
     ('feature.html', 'Page with Feature')
