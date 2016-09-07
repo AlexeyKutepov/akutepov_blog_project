@@ -61,7 +61,7 @@
             </div>
             <!-- /section -->
 
-            <div id="modalAlert" class="modal fade bs-example-modal-lg modal-center" tabindex="-1" role="dialog"
+            <div id="modalAlert" class="modal" role="dialog"
                  aria-labelledby="modalAlert">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -84,7 +84,7 @@
             <form id="formFeedback" action="{% url "feedback" %}" method="post">
                 {% csrf_token %}
                 <!-- Modal -->
-                <div id="modalFeedback" class="modal fade" role="dialog">
+                <div id="modalFeedback" class="modal" role="dialog">
                     <div class="modal-dialog">
 
                         <!-- Modal content-->
