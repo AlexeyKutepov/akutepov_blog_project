@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 12:00+0300\n"
+"POT-Creation-Date: 2016-09-09 10:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,46 +95,88 @@ msgstr ""
 msgid "Tags"
 msgstr "Метки"
 
-#: akutepov_blog/templates/base.html:33 akutepov_blog/templates/base.html:129
+#: akutepov_blog/templates/base.html:34 akutepov_blog/templates/base.html:130
 #: akutepov_blog/templates/index.html:8
 msgid "Alexey Kutepov"
 msgstr "Алексей Кутепов"
 
-#: akutepov_blog/templates/base.html:34 akutepov_blog/templates/index.html:9
+#: akutepov_blog/templates/base.html:35 akutepov_blog/templates/index.html:9
 msgid "Software Engineer"
 msgstr "Разработчик программного обеспечения"
 
-#: akutepov_blog/templates/base.html:42 akutepov_blog/templates/index.html:18
+#: akutepov_blog/templates/base.html:43 akutepov_blog/templates/index.html:18
 msgid "Menu"
 msgstr "Меню"
 
-#: akutepov_blog/templates/base.html:64
+#: akutepov_blog/templates/base.html:65
 msgid "Contact"
 msgstr "Контакты"
 
-#: akutepov_blog/templates/base.html:75
+#: akutepov_blog/templates/base.html:76
 msgid "Follow me"
 msgstr "Я в соцсетях"
 
-#: akutepov_blog/templates/base.html:88
+#: akutepov_blog/templates/base.html:89
 msgid "Info"
 msgstr "Информация"
 
-#: akutepov_blog/templates/base.html:96 akutepov_blog/templates/base.html:106
+#: akutepov_blog/templates/base.html:97 akutepov_blog/templates/base.html:107
 msgid "Subscribe"
 msgstr "Подписаться"
 
-#: akutepov_blog/templates/base.html:103
+#: akutepov_blog/templates/base.html:104
 msgid "You have successfully subscribed to the newsletter!"
 msgstr "Вы успешно подписаны на наши новости!"
 
-#: akutepov_blog/templates/base.html:104
+#: akutepov_blog/templates/base.html:105
 msgid "Error!"
 msgstr "Ошибка"
 
-#: akutepov_blog/templates/base.html:122
+#: akutepov_blog/templates/base.html:123
 msgid "Blog of Alexey Kutepov"
 msgstr "Блог Алексея Кутепова"
+
+#: akutepov_blog/templates/contacts.html:9
+#, fuzzy
+#| msgid "Contact"
+msgid "Contacts"
+msgstr "Контакты"
+
+#: akutepov_blog/templates/contacts.html:16
+msgid "I'm in social networks"
+msgstr "Я в социальных сетях"
+
+#: akutepov_blog/templates/contacts.html:32
+#: akutepov_blog/templates/index.html:71
+msgid "Thank you!"
+msgstr "Спасибо за обращение!"
+
+#: akutepov_blog/templates/contacts.html:35
+#: akutepov_blog/templates/index.html:74
+msgid "Your message has been successfully sent!"
+msgstr "Ваше сообщение успешно отправлено!"
+
+#: akutepov_blog/templates/contacts.html:55
+#: akutepov_blog/templates/index.html:94
+msgid "Мessage"
+msgstr "Сообщение"
+
+#: akutepov_blog/templates/contacts.html:61
+#: akutepov_blog/templates/index.html:100
+msgid "Email address"
+msgstr "Email"
+
+#: akutepov_blog/templates/contacts.html:65
+#: akutepov_blog/templates/contacts.html:88
+#: akutepov_blog/templates/index.html:104
+#: akutepov_blog/templates/index.html:127
+msgid "Write a message"
+msgstr "Написать сообщение"
+
+#: akutepov_blog/templates/contacts.html:73
+#: akutepov_blog/templates/index.html:112
+msgid "Send"
+msgstr "Отправить"
 
 #: akutepov_blog/templates/index.html:45
 msgid "Services"
@@ -143,31 +185,6 @@ msgstr "Услуги"
 #: akutepov_blog/templates/index.html:55
 msgid "Recent Works"
 msgstr "Последние работы"
-
-#: akutepov_blog/templates/index.html:71
-msgid "Thank you!"
-msgstr "Спасибо за обращение!"
-
-#: akutepov_blog/templates/index.html:74
-msgid "Your message has been successfully sent!"
-msgstr "Ваше сообщение успешно отправлено!"
-
-#: akutepov_blog/templates/index.html:94
-msgid "Мessage"
-msgstr "Сообщение"
-
-#: akutepov_blog/templates/index.html:100
-msgid "Email address"
-msgstr "Email"
-
-#: akutepov_blog/templates/index.html:104
-#: akutepov_blog/templates/index.html:127
-msgid "Write a message"
-msgstr "Написать сообщение"
-
-#: akutepov_blog/templates/index.html:112
-msgid "Send"
-msgstr "Отправить"
 
 #: akutepov_blog/templates/index.html:135
 msgid "Articles"
