@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-09 10:33+0300\n"
+"POT-Creation-Date: 2016-09-09 11:03+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,7 +107,8 @@ msgid "Menu"
 msgstr ""
 
 #: akutepov_blog/templates/base.html:65
-msgid "Contact"
+#: akutepov_blog/templates/contacts.html:9
+msgid "Contacts"
 msgstr ""
 
 #: akutepov_blog/templates/base.html:76
@@ -132,10 +133,6 @@ msgstr ""
 
 #: akutepov_blog/templates/base.html:123
 msgid "Blog of Alexey Kutepov"
-msgstr ""
-
-#: akutepov_blog/templates/contacts.html:9
-msgid "Contacts"
 msgstr ""
 
 #: akutepov_blog/templates/contacts.html:16
