@@ -35,6 +35,7 @@
 
     {% include "aldryn_newsblog/includes/author.html" with author=article.author %}
 
+
     {% render_model article "lead_in" %}
 
     {% if detail_view %}
@@ -48,4 +49,6 @@
             {% endfor %}
         </p>
     {% endif %}
+
+    <p class="text-center"><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}" class="btn btn-action">{% trans "Read more" %}</a></p>
 </article>
