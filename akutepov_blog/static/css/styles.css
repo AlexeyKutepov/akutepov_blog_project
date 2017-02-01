@@ -809,10 +809,10 @@ ul.hr li {
  margin-right: 5px; /* Отступ слева */
 }
 
-.block_150 {
+.block_130 {
     overflow: hidden; /* Полоса прокрутки при необходимости */
-    height: 150px; /* Высота */
-    max-height: 150px; /* Максимальная высота */
+    height: 130px; /* Высота */
+    max-height: 130px; /* Максимальная высота */
 }
 
 .block_300 {
