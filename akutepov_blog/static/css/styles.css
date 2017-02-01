@@ -809,6 +809,28 @@ ul.hr li {
  margin-right: 5px; /* Отступ слева */
 }
 
+.block_150 {
+    overflow: hidden; /* Полоса прокрутки при необходимости */
+    height: 150px; /* Высота */
+    max-height: 150px; /* Максимальная высота */
+}
+
+.block_300 {
+    overflow: hidden; /* Полоса прокрутки при необходимости */
+    height: 300px; /* Высота */
+    max-height: 300px; /* Максимальная высота */
+
+}
+
+.block_300:before { /* затухание текста */
+    content: "";
+    display: block;
+    height: 20px;
+    position: relative;
+    top: 280px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+}
+
 /* Max page width
 /////////////////////////////////////////////////////////////////////*/
 @media (min-width: 1200px) {

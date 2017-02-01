@@ -4,22 +4,30 @@
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
 
-    <header class="entry-header">
+    <div class="block_150">
+        <header class="entry-header">
 
- 		<h3 class="entry-title text-center">
-            {% if not detail_view %}
-                <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
-            {% else %}
-                {% render_model article "title" %}
-            {% endif %}
-        </h3>
-	</header>
+            <h3 class="entry-title text-center">
+                {% if not detail_view %}
+                    <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
+                {% else %}
+                    {% render_model article "title" %}
+                {% endif %}
+            </h3>
+        </header>
+    </div>
 
-    {% render_model article "lead_in" %}
+    <div class="block_300">
+        {% render_model article "lead_in" %}
 
+    </div>
+    <br>
     {% if detail_view %}
         {% render_placeholder article.content language placeholder_language %}
     {% endif %}
 
-    <p class="text-center"><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}" class="btn btn-action">{% trans "Read more" %}</a></p>
+
+
+    <p class="text-center"><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"
+                              class="btn btn-action">{% trans "Read more" %}</a></p>
 </article>
