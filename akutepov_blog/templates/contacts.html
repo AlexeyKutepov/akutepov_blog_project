@@ -60,11 +60,12 @@
                                         <div class="form-group">
                                             <label>{% trans "Email address" %} <i class="text-danger">*</i></label>
                                             <input class="form-control" name="email" type="email"
-                                                   placeholder="mail@example.com">
+                                                   placeholder="mail@example.com" required>
+                                            <input class="dn" name="subject" type="text">
 
                                             <p><label>{% trans "Write a message" %}</label>
                                                 <textarea rows="5" style="width:100%;" class="form-control"
-                                                          name="message"></textarea>
+                                                          name="message" required></textarea>
                                         </div>
                                     </div>
                                 </div>

@@ -1,9 +1,10 @@
+from django.core.mail import send_mail
 from django.http import JsonResponse
+from django.utils import timezone
+
 from akutepov_blog import settings
 from feedback.forms import FeedbackForm
 from feedback.models import Feedback
-from django.utils import timezone
-from django.core.mail import send_mail
 
 
 def feedback(request):
@@ -15,6 +16,8 @@ def feedback(request):
     if request.method == 'POST':
         form = FeedbackForm(request.POST)
         if form.is_valid():
+            if 'subject' in form.cleaned_data and form.cleaned_data['subject']:
+                return JsonResponse({"result": "error"})
             if 'email' in form.cleaned_data:
                 email = form.cleaned_data['email']
             else:
