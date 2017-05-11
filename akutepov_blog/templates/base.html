@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Блог Алексея Кутепова">
     <meta name="author" content="Алексей Кутепов">
     <meta name="yandex-verification" content="d7f43f1e48a23a4e" />
     <meta name="google-site-verification" content="DqlAdbOQz4PFtgMIxDSzVrgojdgJhMHaNX1U1oY3E-g" />
+    {% block meta %}
+        <meta name="description" content="Сайт разработчика программного обеспечения Алексея Кутепова: разработка серверных приложений на Java и Python, разработка мобильных приложений под Android">
+    {% endblock %}
 
-    <title>{% block title %}Блог Алексея Кутепова{% endblock title %}</title>
+    <title>{% block title %}Алексей Кутепов{% endblock title %}</title>
 
     <link rel="shortcut icon" href="{{ STATIC_URL }}img/gt_favicon.png">
 

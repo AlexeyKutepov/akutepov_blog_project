@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load cms_tags staticfiles sekizai_tags menu_tags i18n %}
+{% block meta %}
+    <meta name="description" content="Блог разработчика программного обеспечения Алексея Кутепова: разработка серверных приложений на Java и Python, разработка мобильных приложений под Android">
+{% endblock %}
 {% block content %}
 {% placeholder "content" %}
 {% endblock %}
