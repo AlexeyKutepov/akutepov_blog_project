@@ -5,35 +5,37 @@
     {% if not article.published %} unpublished{% endif %}">
 
     <header class="entry-header">
- 		<div class="entry-meta">
- 			<span class="posted-on"><time class="entry-date published" date="2013-06-17">{{ article.publishing_date|date }}</time></span>
- 		</div>
- 		<h1 class="entry-title">
+        <div class="entry-meta">
+            <span class="posted-on"><time class="entry-date published"
+                                          date="2013-06-17">{{ article.publishing_date|date }}</time></span>
+        </div>
+        <h1 class="entry-title">
             {% if not detail_view %}
                 <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
             {% else %}
                 {% render_model article "title" %}
             {% endif %}
         </h1>
-	</header>
+    </header>
 
     {# The image is only shown on the detail view by using the condition "and detail_view" #}
     {% if article.featured_image_id and detail_view %}
         <p>
-            <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
+            <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}"
+                 alt="{{ article.featured_image.alt }}">
         </p>
     {% endif %}
 
-{#    {% if article.categories.exists %}#}
-{#        <p>#}
-{#            {% for category in article.categories.all %}#}
-{#                <a href="{% namespace_url 'article-list-by-category' category.slug namespace=namespace default='' %}">{{ category.name }}</a>#}
-{#                {% if not forloop.last %}, {% endif %}#}
-{#            {% endfor %}#}
-{#        </p>#}
-{#    {% endif %}#}
-{##}
-{#    {% include "aldryn_newsblog/includes/author.html" with author=article.author %}#}
+    {#    {% if article.categories.exists %}#}
+    {#        <p>#}
+    {#            {% for category in article.categories.all %}#}
+    {#                <a href="{% namespace_url 'article-list-by-category' category.slug namespace=namespace default='' %}">{{ category.name }}</a>#}
+    {#                {% if not forloop.last %}, {% endif %}#}
+    {#            {% endfor %}#}
+    {#        </p>#}
+    {#    {% endif %}#}
+    {##}
+    {#    {% include "aldryn_newsblog/includes/author.html" with author=article.author %}#}
 
     {% render_model article "lead_in" %}
 
@@ -48,4 +50,13 @@
             {% endfor %}
         </p>
     {% endif %}
+
+    <div class="row">
+        <div class="col-lg-12">
+            <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+            <script src="//yastatic.net/share2/share.js"></script>
+            <div class="ya-share2"
+                 data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,blogger,reddit,linkedin,telegram"></div>
+        </div>
+    </div>
 </article>

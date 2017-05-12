@@ -4,39 +4,38 @@
 
     <main id="main">
 
-	<div class="container">
+        <div class="container">
 
-		<div class="row topspace">
-            <!-- Article list main content -->
-            <article class="col-sm-8 maincontent">
-                {% block newsblog_content %}
-                    {# article_list.html and article_detail.html extend this template #}
-                {% endblock %}
-            </article>
-			<!-- /Article -->
+            <div class="row topspace">
+                <!-- Article list main content -->
+                <article class="col-sm-8 maincontent">
+                    {% block newsblog_content %}
+                        {# article_list.html and article_detail.html extend this template #}
+                    {% endblock %}
+                </article>
+                <!-- /Article -->
 
-			<!-- Sidebar -->
-			<aside class="col-md-4 sidebar sidebar-left">
+                <!-- Sidebar -->
+                <aside class="col-md-4 sidebar sidebar-left">
 
-                {% static_placeholder "widget" %}
+                    {% static_placeholder "widget" %}
 
-                <div class="widget">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- akutepov.ru sidebar 300x600 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:300px;height:600px"
-                         data-ad-client="ca-pub-3381757163095866"
-                         data-ad-slot="1082289924"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-			</aside>
-			<!-- /Sidebar -->
+                    <div class="widget">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- akutepov.ru sidebar 300x600 -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:300px;height:600px"
+                             data-ad-client="ca-pub-3381757163095866"
+                             data-ad-slot="1082289924"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </aside>
+                <!-- /Sidebar -->
+            </div>
+        </div>    <!-- /container -->
 
-		</div>
-	</div>	<!-- /container -->
-
-</main>
+    </main>
 
 {% endblock content %}
